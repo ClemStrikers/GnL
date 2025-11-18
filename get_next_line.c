@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: clempaol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: clempaol <clempaol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:39:47 by clempaol          #+#    #+#             */
-/*   Updated: 2025/11/17 13:43:12 by clempaol         ###   ########.fr       */
+/*   Updated: 2025/11/18 15:28:11 by clempaol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "get_next_line.h"
+
+
 
 char	*get_next_line(int fd)
 {
