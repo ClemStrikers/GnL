@@ -6,7 +6,7 @@
 /*   By: clempaol <clempaol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:39:55 by clempaol          #+#    #+#             */
-/*   Updated: 2025/11/25 10:45:29 by clempaol         ###   ########.fr       */
+/*   Updated: 2025/11/25 13:07:58 by clempaol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
+#  define BUFFER_SIZE 1
 # endif
 
 char	*get_next_line(int fd);
