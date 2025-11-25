@@ -6,11 +6,13 @@
 /*   By: clempaol <clempaol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:39:47 by clempaol          #+#    #+#             */
-/*   Updated: 2025/11/18 15:28:11 by clempaol         ###   ########.fr       */
+/*   Updated: 2025/11/25 10:51:40 by clempaol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <fcntl.h>
+#include <stdio.h>
 
 char	*safe_strdup(char *s)
 {
@@ -109,3 +111,14 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
+// int	main(void)
+// {
+// 	int	fd = open("test.txt",O_RDONLY);
+// 	char	*s;
+// 	while ((s = get_next_line(fd)))
+// 	{
+// 		printf("%s", s);
+// 		free(s);
+// 	}
+// 	close(fd);
+// }

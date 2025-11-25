@@ -6,13 +6,13 @@
 /*   By: clempaol <clempaol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:40:04 by clempaol          #+#    #+#             */
-/*   Updated: 2025/11/18 14:11:28 by clempaol         ###   ########.fr       */
+/*   Updated: 2025/11/25 10:45:16 by clempaol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -63,7 +63,27 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strdup(const char *src)
+{
+	int		i;
+	char	*dest;
+
+	if (src == NULL)
+		return (NULL);
+	i = 0;
+	dest = malloc(sizeof(char) * ft_strlen(src) + 1);
+	if (dest == NULL)
+		return (NULL);
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*str;
 	size_t	l1;
